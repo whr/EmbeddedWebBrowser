@@ -34,7 +34,7 @@ namespace WebBrowserTest
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //InitializeIE();
+            InitializeIE();
             var name = Assembly.GetExecutingAssembly().Location;
             var f = new FileInfo(name);
             var html = System.IO.Path.Combine(f.DirectoryName, "Main.html");
